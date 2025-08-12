@@ -21,4 +21,10 @@ This project performs **real-time facial emotion recognition** using your webcam
 ---
 
 ## 📁 Project Structure
+emotion_detection/
+├── facialemotionmodel.h5 # Pre-trained emotion recognition model
+├── emotion_detection.py # Main Python script
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
+
 
