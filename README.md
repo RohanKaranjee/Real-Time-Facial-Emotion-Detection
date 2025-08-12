@@ -1,4 +1,3 @@
-cat << EOF > README.md
 # 🎭 Real-Time Facial Emotion Detection
 
 ![Emotion Detection Demo](https://via.placeholder.com/640x360.png?text=Emotion+Detection+Demo)
@@ -7,7 +6,7 @@ cat << EOF > README.md
 
 ## 🚀 Project Overview
 
-This project performs **real-time facial emotion recognition** using your webcam. It leverages a pre-trained **TensorFlow/Keras** model (\`facialemotionmodel.h5\`) alongside **OpenCV** for video capture and face detection to classify emotions in real-time.
+This project performs **real-time facial emotion recognition** using your webcam. It leverages a pre-trained **TensorFlow/Keras** model (`facialemotionmodel.h5`) alongside **OpenCV** for video capture and face detection to classify emotions in real-time.
 
 ---
 
@@ -23,13 +22,13 @@ This project performs **real-time facial emotion recognition** using your webcam
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 emotion_detection/
 ├── facialemotionmodel.h5       # Pre-trained emotion recognition model
 ├── emotion_detection.py        # Main Python script
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Project documentation
-\`\`\`
+```
 
 ---
 
@@ -37,34 +36,34 @@ emotion_detection/
 
 - Python 3.8 or higher  
 - Functional webcam  
-- The \`facialemotionmodel.h5\` model file (included or downloaded separately)  
+- The `facialemotionmodel.h5` model file (included or downloaded separately)  
 
 ---
 
 ## 🛠️ Installation
 
-1. **Clone the repository:**
+1. Clone the repository:
 
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/emotion_detection.git
 cd emotion_detection
-\`\`\`
+```
 
-2. **(Optional) Create and activate a virtual environment:**
+2. (Optional) Create and activate a virtual environment:
 
-\`\`\`bash
+```bash
 python -m venv venv
 # Windows:
-venv\\Scripts\\activate
+venv\Scripts\activate
 # Mac/Linux:
 source venv/bin/activate
-\`\`\`
+```
 
-3. **Install dependencies:**
+3. Install dependencies:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ---
 
@@ -72,11 +71,11 @@ pip install -r requirements.txt
 
 Run the main script to start detecting emotions in real-time:
 
-\`\`\`bash
+```bash
 python emotion_detection.py
-\`\`\`
+```
 
-- Press **\`Q\`** at any time to quit the webcam window.
+- Press **`Q`** at any time to quit the webcam window.
 
 ---
 
@@ -98,8 +97,8 @@ python emotion_detection.py
 
 | Issue                      | Solution                                                                 |
 |----------------------------|--------------------------------------------------------------------------|
-| Model not loading?          | Verify the \`MODEL_PATH\` in \`emotion_detection.py\` points to \`facialemotionmodel.h5\`. |
-| Webcam not opening?         | Change \`cv2.VideoCapture(0)\` to \`cv2.VideoCapture(1)\` or other indices. |
+| Model not loading?          | Verify the `MODEL_PATH` in `emotion_detection.py` points to `facialemotionmodel.h5`. |
+| Webcam not opening?         | Change `cv2.VideoCapture(0)` to `cv2.VideoCapture(1)` or other indices. |
 | TensorFlow warnings/errors? | Usually harmless; ensure compatible TensorFlow and Python versions.     |
 
 ---
@@ -117,5 +116,3 @@ This project is intended for **educational purposes only**.
 ---
 
 Thanks for checking out the project! Feel free to contribute or raise issues.
-
-EOF
